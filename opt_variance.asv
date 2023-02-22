@@ -16,7 +16,7 @@ fprintf("eps = %f, delta = %f\n",eps,delta)
 % a_bin_size = x_grid(2)-x_grid(1);
 amax = axRatio*(max(x_grid)-min(x_grid));
 M = length(x_grid);
-N = axRatio*(M-1)*2+1;
+N = (M-1)*2+1;
 a_grid = linspace(-amax,amax,N);
 
 
