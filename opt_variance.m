@@ -97,16 +97,16 @@ xVector=linprog(objMatrix,A,b,Aeq,beq,lb,ub);
 
 % Check solution validity
 
-fprintf("Expectations validity check (should be all zeros):\n ") 
-(a_matrix*xVector)'
-
-fprintf("Distribution validity check (should be all ones):\n") 
-(ones_matrix*xVector)'
+% fprintf("Expectations validity check (should be all zeros):\n ") 
+% (a_matrix*xVector)'
+% 
+% fprintf("Distribution validity check (should be all ones):\n") 
+% (ones_matrix*xVector)'
 
 % Outputs
 
 pMatrix = reshape(xVector,N,M)';
 varVector = Asq*xVector;
 
-fprintf("Variance vector:\n")
-varVector'
+% fprintf("Variance vector:\n")
+% varVector'
